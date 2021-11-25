@@ -26,10 +26,17 @@ const Home: NextPage = () => {
           Get started by editing <code className={styles.code}>pages/index.tsx</code>
         </p>
 
-        <p className={styles.description}>Counter: {counter.value}</p>
+        <p className={styles.description}>
+          Counter:
+          {counter.value}
+        </p>
         <div className={styles.huehue}>
-          <button onClick={() => dispatch(increment())}>Increment</button>
-          <button onClick={() => dispatch(decrement())}>Decrement</button>
+          <button type='button' onClick={() => dispatch(increment())}>
+            Increment
+          </button>
+          <button type='button' onClick={() => dispatch(decrement())}>
+            Decrement
+          </button>
         </div>
       </main>
 
@@ -39,7 +46,7 @@ const Home: NextPage = () => {
           target='_blank'
           rel='noopener noreferrer'
         >
-          Powered by{' '}
+          Powered by
           <span className={styles.logo}>
             <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
           </span>
