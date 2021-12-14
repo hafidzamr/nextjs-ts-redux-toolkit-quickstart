@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { useAppDispatch, useAppSelecter } from '@/hooks';
 import { increment, decrement } from '@/store/counter';
-import styles from '../styles/Home.module.css';
+import styles from '@/styles/Home.module.css';
 
 const Home: NextPage = () => {
   const dispatch = useAppDispatch();
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 data-testid='welcome' className={styles.title}>
           Welcome to <a href='https://nextjs.org'>Next.js!</a>
         </h1>
 
